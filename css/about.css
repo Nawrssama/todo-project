@@ -39,7 +39,49 @@ a {
     text-decoration: underline ;
 }
 
+main section {
+    display: flex;
+    
+}
 
+main img {
+    width: 250px;
+    margin-top: 75px;
+    margin-left: 10px;
+    border-radius: 17%;
+    box-shadow: -1px 0px 13px 5px rgb(0 71 71);
+    float: left;
+}
+
+
+main nav ul li {
+    background-color: rgb(71, 67, 121);
+    margin: 5px;
+    display: flex;
+    padding: 20px 10px;
+    font-family: 'Righteous', cursive;
+    border-radius: 5%;
+    margin-top: 20%;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 4px 4px 15px 5px rgb(0 71 71);
+}
+
+main form {
+    margin: 5% 40%;
+}
+
+input[type="text"] {
+    padding: 10px
+}
+
+input[type="email"] {
+    padding: 10px;
+}
+
+textarea {
+    padding: 20px;
+}
 
 footer {
     background-color: rgb(34, 34, 34);
