@@ -1,2 +1,2 @@
 # todo-project
-![boot](/images/Untitled%20(3).jpg)
+![boot](/images/todo-project%20wireframe.jpg)
