@@ -3,15 +3,20 @@
 }
 
 body {
-    background-color: rgb(87, 34, 34);
+    background-color: rgb(54 100 116);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
 }
 
 header {
-    background-color: rgb(34, 34, 34);
-    position: absolute;
+    background-color: rgb(5 9 38);
+    position: relative;
     width: 100%;
-    top: 0;
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header div img {
@@ -19,8 +24,12 @@ header div img {
     height: 55px;
     border-radius: 60%;
     margin: 5px 5px;
-    float: left;
  
+}
+
+header ul {
+    display: flex;
+    gap: 100px;
 }
 
 nav ul li {
@@ -39,36 +48,56 @@ a {
     text-decoration: underline ;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: center;
+    width: 80%;
+    gap: 20px;
+}
+
 main section {
     display: flex;
+    gap: 20px;
     
 }
 
 main img {
     width: 250px;
-    margin-top: 75px;
-    margin-left: 10px;
     border-radius: 17%;
-    box-shadow: -1px 0px 13px 5px rgb(0 71 71);
-    float: left;
+    box-shadow: -1px 0px 13px 5px rgb(0, 0, 0);
 }
 
-
-main nav ul li {
-    background-color: rgb(71, 67, 121);
-    margin: 5px;
+main section nav ul {
     display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+nav ul li {
     padding: 20px 10px;
     font-family: 'Righteous', cursive;
-    border-radius: 5%;
-    margin-top: 20%;
-    font-size: 20px;
-    text-align: center;
-    box-shadow: 4px 4px 15px 5px rgb(0 71 71);
+    border-radius: 60%;
 }
 
+main nav ul li {
+    background-color: rgb(92 132 15);
+    font-family: 'Righteous', cursive;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    height: 60px;
+    box-shadow: 4px 4px 15px 5px rgb(0 0 0);
+}
+
+
 main form {
-    margin: 5% 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
 }
 
 input[type="text"] {
@@ -80,43 +109,27 @@ input[type="email"] {
 }
 
 textarea {
-    padding: 20px;
+    padding: 25px;
+}
+
+input[type="submit"] {
+    background-color: #0baef2;
+    border-radius: 10px;
 }
 
 footer {
+    justify-content: space-around;
     background-color: rgb(34, 34, 34);
     width: 100%;
-    bottom: 0;
-    height: 100%;
-    margin-bottom: 0;
-}
-
-footer div img {
-    width: 50px;
-    height: 55px;
-    border-radius: 60%;
-    margin: 5px 5px;
-    float: left;
-
-}
-footer div {
-  height: 40px;
-    display: inline-block;
-   
-}
-
-footer p, i {
-    display: inline-block;
-    background-color: rgb(83, 83, 197);
-    
+    display: flex;
+    align-items: center;
+    height: 50px;
     
 }
 
-div#copy-right {
-    margin-right: 10px;
-}
 
-p {
-    margin-left: 150px;
+#copy-right, #social-media {
+    color: azure;
+
 }
 

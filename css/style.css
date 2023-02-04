@@ -3,15 +3,20 @@
 }
 
 body {
-    background-color: rgb(87, 34, 34);
+    background-color: rgb(54 100 116);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
 }
 
 header {
-    background-color: rgb(34, 34, 34);
-    position: absolute;
+    background-color: rgb(5 9 38);
+    position: relative;
     width: 100%;
-    top: 0;
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header div img {
@@ -19,8 +24,12 @@ header div img {
     height: 55px;
     border-radius: 60%;
     margin: 5px 5px;
-    float: left;
  
+}
+
+ul {
+    display: flex;
+    gap: 100px;
 }
 
 nav ul li {
@@ -39,18 +48,23 @@ a {
     text-decoration: underline ;
 }
 
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    width: 80%;
+    gap: 20px;
+
+}
 main p {
-    display: inline-block;
     background-color: rgb(92 132 15);
     font-family: fantasy;
-    border-radius: 5%;
-    margin-top: 10%;
-    margin-left: 6%;
-    block-size: 100px;
+    border-radius: 20px;
     font-size: 30px;
     box-shadow: o 1px 1px 1px black;
     box-shadow: 3px 5px 15px 4px black;
-    width: 78%;
     padding: 30px;
     text-align: center;
 }
@@ -66,12 +80,8 @@ body main table {
 table {
     text-align: center;
     border-radius: 10%;
-    margin-top: 2%;
-    margin-left: 6%;
-    margin-bottom: 3%;
     box-shadow: blue;
     box-shadow: 5px 8px 19px 5px black;
-    width: 87%;
 }
 td, th {
     border: 3px solid black;
@@ -90,40 +100,26 @@ th {
     font-size: 50px;
 }
 
+.first {
+    
+}
+
 footer {
+    justify-content: space-around;
     background-color: rgb(34, 34, 34);
     width: 100%;
-    bottom: 0;
-    height: 100%;
-    margin-bottom: 0;
-}
-
-footer div img {
-    width: 50px;
-    height: 55px;
-    border-radius: 60%;
-    margin: 5px 5px;
-    float: left;
-
-}
-footer div {
-  height: 40px;
-    display: inline-block;
-   
-}
-
-footer p, i {
-    display: inline-block;
-    background-color: rgb(83, 83, 197);
-    
+    display: flex;
+    align-items: center;
+    height: 50px;
     
 }
 
-div#copy-right {
-    margin-right: 10px;
+
+#copy-right, #social-media {
+    color: azure;
+
 }
 
-p {
-    margin-left: 150px;
-}
+
+
 
