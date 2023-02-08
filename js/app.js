@@ -46,4 +46,46 @@ if (conres == false){
 //     alert("wellcome " + name1 + " you are soo amazing by the way ;)")
 // }
 
+//////////////////////////////////// todo-js2 ///////////////////////////////////////////////////
 
+let arr = [];
+
+let firstq = prompt("do you like food : yes or no ");
+
+
+let secondq = prompt("do you like winter : yes or no ");
+
+
+let thirdq = prompt("do you enjoy life : yes or no ");
+
+
+
+function check(aaa){
+    if (aaa == "yes" || aaa == "no"){
+        
+        arr.push(aaa);
+       
+    }else   {
+        
+        arr.push("invalid");
+    }
+   
+    
+}
+
+function loop(){
+    for (let i = 0 ; i < arr.length ; i++){
+        console.log(arr[i]);
+    }
+}
+
+check(firstq);
+check(secondq);
+check(thirdq);
+
+
+
+
+
+
+loop();
